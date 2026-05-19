@@ -130,9 +130,10 @@ http://localhost:8123
 Open the esp32 folder in VS Code using PlatformIO. 
 
 # Edit WiFi credentials inside: 
+```
 const char* ssid = "YOUR_WIFI"; 
 const char* password = "YOUR_PASSWORD"; 
-
+```
 # Edit MQTT broker IP: 
 const char* mqtt_server = "YOUR_SERVER_IP"; 
 
@@ -153,11 +154,12 @@ State
 esp32/led/state 
 
 ## Example MQTT Test 
+```
 Turn LED ON: 
 mosquitto_pub -h localhost -t esp32/led/set -m ON 
 Turn LED OFF: 
 mosquitto_pub -h localhost -t esp32/led/set -m OFF 
-
+```
 ## Technologies Used 
 Embedded 
 - ESP32  
