@@ -1,3 +1,6 @@
+
+![Dashboard](esp32_led.png) 
+
 # ESP32 IoT Platform 
 A full-stack IoT platform based on: 
 - ESP32 firmware (Arduino)
