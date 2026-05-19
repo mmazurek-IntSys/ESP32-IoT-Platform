@@ -103,12 +103,13 @@ Software
 - ESP32 development board  
 
 ## Installation 
+```
 Clone repository 
 git clone https://github.com/mmazurek-IntSys/esp32-iot-platform.git 
 cd esp32-iot-platform 
 Start Docker Services 
 docker compose up -d --build 
-
+```
 ## This starts: 
 - Mosquitto MQTT broker  
 - Node.js backend  
