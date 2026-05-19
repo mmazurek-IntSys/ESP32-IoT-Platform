@@ -1,0 +1,15 @@
+mqtt:
+  broker: 127.0.0.1
+
+switch:
+
+  - platform: mqtt
+
+    name: "ESP32 LED"
+
+    command_topic: "esp32/led/set"
+
+    state_topic: "esp32/led/state"
+
+    payload_on: "ON"
+    payload_off: "OFF"

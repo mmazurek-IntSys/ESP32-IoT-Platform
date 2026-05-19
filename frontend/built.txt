@@ -1,0 +1,12 @@
+Build frontendu
+
+Lokalnie:
+
+npm install
+npm run dev
+
+Docker:
+
+docker compose up --build
+Frontend URL
+http://localhost:5173
