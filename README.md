@@ -97,7 +97,7 @@ Hardware
 
 ## Installation 
 Clone repository 
-git clone https://github.com/YOUR_USERNAME/esp32-iot-platform.git 
+git clone https://github.com/mmazurek-IntSys/esp32-iot-platform.git 
 cd esp32-iot-platform 
 Start Docker Services 
 docker compose up -d --build 
