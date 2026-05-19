@@ -58,8 +58,9 @@ React Frontend
 | 
 Home Assistant 
 
-## Project Structure
+
 ```
+## Project Structure
 ```text
 iot-platform/
 ├── docker-compose.yml
