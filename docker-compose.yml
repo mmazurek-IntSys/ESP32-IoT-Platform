@@ -1,1 +1,56 @@
+version: "3.9"
 
+services:
+
+  mosquitto:
+    image: eclipse-mosquitto:2
+
+    container_name: mosquitto
+
+    restart: unless-stopped
+
+    ports:
+      - "1883:1883"
+
+    volumes:
+      - ./mosquitto/config:/mosquitto/config
+      - ./mosquitto/data:/mosquitto/data
+      - ./mosquitto/log:/mosquitto/log
+
+  backend:
+    build: ./backend
+
+    container_name: iot-backend
+
+    restart: unless-stopped
+
+    ports:
+      - "3000:3000"
+
+    depends_on:
+      - mosquitto
+
+  frontend:
+    build: ./frontend
+
+    container_name: iot-frontend
+
+    restart: unless-stopped
+
+    ports:
+      - "5173:5173"
+
+    depends_on:
+      - backend
+
+  homeassistant:
+    image: ghcr.io/home-assistant/home-assistant:stable
+
+    container_name: homeassistant
+
+    network_mode: host
+
+    restart: unless-stopped
+
+    volumes:
+      - ./homeassistant:/config
