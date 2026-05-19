@@ -44,9 +44,9 @@ home and embedded systems development.
 - Frontend service
 - Home Assistant service 
 
-# Architecture 
+## Architecture 
 
-ESP32 <----MQTT----> Mosquitto 
+## ESP32 <----MQTT----> Mosquitto 
 | 
 | 
 Node.js Backend 
@@ -57,7 +57,8 @@ Socket.IO/WebSocket
 React Frontend 
 | 
 Home Assistant 
-Project Structure 
+
+## Project Structure 
 iot-platform/ 
 ├── docker-compose.yml 
 │ 
@@ -95,7 +96,7 @@ Software
 - VS Code  
 - PlatformIO extension  
 
-Hardware 
+## Hardware 
 - ESP32 development board  
 
 ## Installation 
@@ -115,33 +116,33 @@ This starts:
 Open: 
 http://localhost:5173 
 
-Backend API 
+## Backend API 
 http://localhost:3000 
 
-Home Assistant 
+## Home Assistant 
 http://localhost:8123 
 
 ## ESP32 Setup 
 Open the esp32 folder in VS Code using PlatformIO. 
 
-Edit WiFi credentials inside: 
+# Edit WiFi credentials inside: 
 const char* ssid = "YOUR_WIFI"; 
 const char* password = "YOUR_PASSWORD"; 
 
-Edit MQTT broker IP: 
+# Edit MQTT broker IP: 
 const char* mqtt_server = "YOUR_SERVER_IP"; 
 
-Build and upload firmware: 
+# Build and upload firmware: 
 pio run --target upload 
 
-Open serial monitor: 
+# Open serial monitor: 
 pio device monitor 
 MQTT Topics 
 
-Commands 
+## Commands 
 esp32/led/set 
 
-Payload: 
+# Payload: 
 ON 
 OFF 
 State 
@@ -159,13 +160,13 @@ Embedded
 - Arduino Framework  
 - PubSubClient  
 
-Backend 
+# Backend 
 - Node.js  
 - Express  
 - MQTT.js  
 - Socket.IO  
 
-Frontend 
+# Frontend 
 - React  
 - Vite  
 - Socket.IO Client  
