@@ -20,7 +20,7 @@ home and embedded systems development.
 - MQTT communication
 - LED control
 - Real-time state updates - Auto reconnect
-- [Link Text](https://s.click.aliexpress.com/e/_c3h0VQED)
+- [Available for purchase here](https://s.click.aliexpress.com/e/_c3h0VQED)
   
 ## Backend (Node.js) 
 - MQTT client
